@@ -32,8 +32,17 @@ Checking POST method from Heroku App:
 <img width="958" alt="Screen Shot 2021-03-18 at 14 58 02" src="https://user-images.githubusercontent.com/80795739/111625865-67ed9b00-87fe-11eb-9472-c7fa275b034a.png"><img width="958" alt="Screen Shot 2021-03-18 at 14 59 48" src="https://user-images.githubusercontent.com/80795739/111625895-6e7c1280-87fe-11eb-8177-e2f25035ebd3.png">
 
 
-PUT method updates user into cloud database and only required parameter is the id that given from request parameter. In addition, Implementation allows users to update partially when request id parameter is valid -e.g. "api/user/4"- instead of using PATCH method. However, If there is an attempt to add a user with non-integer request parameter -e.g. "api/user/Laszlo" instead of "api/user/4"-, app will return HTTP 400 error code. Also, If there is no valid id in the request body app will return HTTP 404 error code.
+PUT method updates user into cloud database and only required parameter is the id that given from request parameter. In addition, Implementation allows users to update partially when request id parameter is valid -e.g. "api/user/5"- instead of using PATCH method. However, If there is an attempt to add a user with non-integer request parameter -e.g. "api/user/Laszlo" instead of "api/user/5"-, app will return HTTP 400 error code. Also, If there is no valid id in the request body app will return HTTP 404 error code.
+
+Current users on databse:
+![Ekran görüntüsü 2021-03-18 1 put](https://user-images.githubusercontent.com/80795739/111705172-5bdef900-8851-11eb-8316-a3b7ba99d2a3.png)
 
 Proper way to update:
+<img width="960" alt="Screen Shot 2021-03-19 at 01 25 06" src="https://user-images.githubusercontent.com/80795739/111705820-5930d380-8852-11eb-9ea5-440cc629e8be.png">
+
+
+Updated users on database:
+![Ekran görüntüsü 2021-03-19 012622 updated](https://user-images.githubusercontent.com/80795739/111705679-271f7180-8852-11eb-9f0e-2c20a932437c.png)
+
 
 
