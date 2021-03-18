@@ -2,12 +2,12 @@ const mongoose=require('mongoose');
 const express=require('express');
 const app = express();
 
-
+/*
 mongoose.connect('mongodb://localhost/computing')
     .then(() => console.log('Connected ...'))
     .catch(err => console.error('Could not', err));
+*/
 
-/*
 mongoose.connect(
     'mongodb+srv://furkan:ymzYaEvmdnCifrPF@cluster0.7uyyg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     { useFindAndModify: false, useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true},
@@ -16,7 +16,7 @@ mongoose.connect(
         console.log("MongoDB Connection -- Ready state is:", mongoose.connection.readyState);
     }
 );
-*/
+
 const userSchema = new mongoose.Schema({
     id: {type : Number, required: true},
     name: {type : String, required: true},
