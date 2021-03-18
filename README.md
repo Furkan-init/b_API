@@ -23,8 +23,9 @@ Proper way to add:
 
 ![Ekran görüntüsü 2021-03-18 145717](https://user-images.githubusercontent.com/80795739/111625427-e433ae80-87fd-11eb-9246-d8bd3fc7c63e.png)
 
-HTTP 400 Bad Request Errors:
+-HTTP 400 Bad Request Errors:
 <img width="958" alt="Screen Shot 2021-03-18 at 14 58 02" src="https://user-images.githubusercontent.com/80795739/111625865-67ed9b00-87fe-11eb-9472-c7fa275b034a.png"><img width="958" alt="Screen Shot 2021-03-18 at 14 59 48" src="https://user-images.githubusercontent.com/80795739/111625895-6e7c1280-87fe-11eb-8177-e2f25035ebd3.png">
 
+PUT method updates user into cloud database and only required parameter is the id that given from request parameter. However, If there is an attempt to add a user that already has same id or by missing information, it will return HTTP 400 error code. Proper way to update:
 
 
