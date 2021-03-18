@@ -7,7 +7,7 @@ https://salty-tor-46351.herokuapp.com/api/user
 Secondly, application performs CRUD operations by using GET, POST, PUT and DELETE Http methods.
 
 
-For GET method, there are two options which are sending whole users or specificic user that given in request by id as parameter from database.
+[]For GET method, there are two options which are sending whole users or specificic user that given in request by id as parameter from database.
 
 With "api/user"
 
@@ -40,9 +40,13 @@ Current users on databse:
 Proper way to update:
 <img width="960" alt="Screen Shot 2021-03-19 at 01 25 06" src="https://user-images.githubusercontent.com/80795739/111705820-5930d380-8852-11eb-9ea5-440cc629e8be.png">
 
-
 Updated users on database:
 ![Ekran görüntüsü 2021-03-19 012622 updated](https://user-images.githubusercontent.com/80795739/111705679-271f7180-8852-11eb-9f0e-2c20a932437c.png)
+
+-HTTP 400 Bad Request Error:
+-HTTP 404 Not Found Errors:
+
+DELETE method deletes user from cloud database and only required parameter is the id that given from request parameter. However, If there is an attempt to add a user with non-integer request parameter -e.g. "api/user/Laszlo" instead of "api/user/5"-, app will return HTTP 400 error code.
 
 
 
