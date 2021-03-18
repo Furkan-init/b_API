@@ -19,8 +19,11 @@ With "api/user/:id"
 <img width="648" alt="Screen Shot 2021-03-18 at 14 19 03" src="https://user-images.githubusercontent.com/80795739/111620024-44732200-87f7-11eb-9fec-3cbd98344959.png">
 
 POST method adds user into cloud database. However, If there is an attempt to add a user that already has same id or by missing information, it will return HTTP 400 error code. 
-Proper way to add:
 
+Proper way to add:
+<img width="958" alt="Screen Shot 2021-03-19 at 00 25 43" src="https://user-images.githubusercontent.com/80795739/111700062-f3404e00-8849-11eb-9b69-b44380364037.png">
+
+Checking from site that deployed on Heroku:
 ![Ekran görüntüsü 2021-03-18 145717](https://user-images.githubusercontent.com/80795739/111625427-e433ae80-87fd-11eb-9246-d8bd3fc7c63e.png)
 
 -HTTP 400 Bad Request Errors:
