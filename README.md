@@ -8,7 +8,7 @@ Secondly, application performs CRUD operations by using GET, POST, PUT and DELET
 
 For GET method, there are two options which are sending whole users or specificic user that given in request by id as parameter from database.
 With "api/user"
-<img width="862" alt="Screen Shot 2021-03-18 at 14 16 34" src="https://user-images.githubusercontent.com/80795739/111619934-2c9b9e00-87f7-11eb-95b3-13cc8c4ead90.png" br />
+<img width="862" alt="Screen Shot 2021-03-18 at 14 16 34" src="https://user-images.githubusercontent.com/80795739/111619934-2c9b9e00-87f7-11eb-95b3-13cc8c4ead90.png" />
 <img width="651" alt="Screen Shot 2021-03-18 at 14 18 37" src="https://user-images.githubusercontent.com/80795739/111619995-3cb37d80-87f7-11eb-9e6a-bcf604f48e50.png">
 With "api/user/:id"
 <img width="955" alt="Screen Shot 2021-03-18 at 14 19 28" src="https://user-images.githubusercontent.com/80795739/111620015-4341f500-87f7-11eb-98a9-42895d7bd955.png">
