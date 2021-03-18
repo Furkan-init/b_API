@@ -7,7 +7,7 @@ https://salty-tor-46351.herokuapp.com/api/user
 Secondly, application performs CRUD operations by using GET, POST, PUT and DELETE Http methods.
 
 
-# For GET method, there are two options which are sending whole users or specificic user that given in request by id as parameter from database.
+## For GET method, there are two options which are sending whole users or specificic user that given in request by id as parameter from database.
 
 With "api/user"
 
