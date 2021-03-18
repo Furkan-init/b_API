@@ -6,6 +6,7 @@ https://salty-tor-46351.herokuapp.com/api/user
 
 Secondly, application performs CRUD operations by using GET, POST, PUT and DELETE Http methods.
 
+
 For GET method, there are two options which are sending whole users or specificic user that given in request by id as parameter from database.
 
 With "api/user"
@@ -18,7 +19,8 @@ With "api/user/:id"
 <img width="955" alt="Screen Shot 2021-03-18 at 14 19 28" src="https://user-images.githubusercontent.com/80795739/111620015-4341f500-87f7-11eb-98a9-42895d7bd955.png">
 <img width="648" alt="Screen Shot 2021-03-18 at 14 19 03" src="https://user-images.githubusercontent.com/80795739/111620024-44732200-87f7-11eb-9fec-3cbd98344959.png">
 
-POST method adds user into cloud database. However, If there is an attempt to add a user that already has same id or by missing information, it will return HTTP 400 error code. 
+
+POST method adds user into cloud database. However, If there is an attempt to add a user that already has same id or by missing information, app will return HTTP 400 error code. 
 
 Proper way to add:
 <img width="958" alt="Screen Shot 2021-03-19 at 00 25 43" src="https://user-images.githubusercontent.com/80795739/111700062-f3404e00-8849-11eb-9b69-b44380364037.png">
@@ -29,6 +31,9 @@ Checking POST method from Heroku App:
 -HTTP 400 Bad Request Errors:
 <img width="958" alt="Screen Shot 2021-03-18 at 14 58 02" src="https://user-images.githubusercontent.com/80795739/111625865-67ed9b00-87fe-11eb-9472-c7fa275b034a.png"><img width="958" alt="Screen Shot 2021-03-18 at 14 59 48" src="https://user-images.githubusercontent.com/80795739/111625895-6e7c1280-87fe-11eb-8177-e2f25035ebd3.png">
 
-PUT method updates user into cloud database and only required parameter is the id that given from request parameter. However, If there is an attempt to add a user that already has same id or by missing information, it will return HTTP 400 error code. Proper way to update:
+
+PUT method updates user into cloud database and only required parameter is the id that given from request parameter. In addition, Implementation allows users to update partially when request id parameter is valid -e.g. "api/user/4"- instead of using PATCH method. However, If there is an attempt to add a user with non-integer request parameter -e.g. "api/user/Laszlo" instead of "api/user/4"-, app will return HTTP 400 error code. Also, If there is no valid id in the request body app will return HTTP 404 error code.
+
+Proper way to update:
 
 
