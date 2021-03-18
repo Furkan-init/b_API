@@ -21,5 +21,6 @@ With "api/user/:id"
 POST method adds user into cloud database. However, If there is an attempt to add a user that already has same id or by missing information, it will return HTTP 400 error code. 
 Proper way to add:
 
-Ekran görüntüsü 2021-03-18 145717](https://user-images.githubusercontent.com/80795739/111623986-26f48700-87fc-11eb-9409-e7f99b046219.png)
+![Ekran görüntüsü 2021-03-18 145717](https://user-images.githubusercontent.com/80795739/111625427-e433ae80-87fd-11eb-9246-d8bd3fc7c63e.png)
+
 
