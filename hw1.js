@@ -38,11 +38,17 @@ async function createUser(id,name, surname, email, age){
     });
     const result = await user.save();
 }
-createUser(1,'Afra','Nur','an@gmail.com',22);
-createUser(2,'Furkan','Erkan','fe@gmail.com',23);
-createUser(3,'Amorti','Nalan','amorti@yahoo.com',20);
 
-
+async function initFirst(){
+    const users = await User
+    .find();
+    if(users.length===0){
+     createUser(1,'Nandor','Relentless','impenetrablefortress@gmail.com',35);
+    createUser(2,'Guillermo','De La Cruz','mosquitoHR@yahoo.com',24);
+    createUser(3,'Baron','Afanas','brafanas@outlook.com',75);
+    }
+}
+initFirst();  
 //To use req.body
 app.use(express.json());
 
@@ -67,6 +73,7 @@ app.get("/api/user/:id", (req,res) => {
                 res.status(404).send(`HTTP 404 -- Not Found`);
             } else
             res.send(users);
+            console.log(cap);
         }
         getSpecific();
     }
