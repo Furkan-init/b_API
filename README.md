@@ -8,7 +8,7 @@ https://salty-tor-46351.herokuapp.com/api/user
 Secondly, application performs CRUD operations by using GET, POST, PUT and DELETE Http methods.
 
 
-### For GET method, there are two options which are sending whole users or specific user that given in request by id as parameter from database.
+### GET method gets all users that exist on database currently or specific user which has given as a request parameter. However, If there is an attempt to add a user with non-integer request parameter -e.g. "api/user/Nandor" instead of "api/user/1"-, app will return HTTP 400 error code. Also, If there is no valid id in the request parameter, app will return HTTP 404 error code.
 
 With "api/user"
 
@@ -19,6 +19,12 @@ With "api/user/:id"
 
 <img width="955" alt="Screen Shot 2021-03-18 at 14 19 28" src="https://user-images.githubusercontent.com/80795739/111620015-4341f500-87f7-11eb-98a9-42895d7bd955.png">
 <img width="648" alt="Screen Shot 2021-03-18 at 14 19 03" src="https://user-images.githubusercontent.com/80795739/111620024-44732200-87f7-11eb-9fec-3cbd98344959.png">
+
+HTTP 400 Bad Request Error:
+<img width="960" alt="Screen Shot 2021-03-19 at 05 22 12" src="https://user-images.githubusercontent.com/80795739/111722572-277c3480-8873-11eb-9504-3ad33bb8a186.png">
+
+HTTP 404 Not Found Error:
+<img width="960" alt="Screen Shot 2021-03-19 at 05 10 13" src="https://user-images.githubusercontent.com/80795739/111722484-fef43a80-8872-11eb-8ef9-c483d9143341.png">
 
 
 ### POST method adds user into cloud database. However, If there is an attempt to add a user that already has same id or by missing information, app will return HTTP 400 error code. 
