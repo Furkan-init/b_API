@@ -50,9 +50,17 @@ Proper way to update:
 Updated users on database:
 ![Ekran görüntüsü 2021-03-19 012622 updated](https://user-images.githubusercontent.com/80795739/111705679-271f7180-8852-11eb-9f0e-2c20a932437c.png)
 
--HTTP 400 Bad Request Errors:
-<img width="958" alt="Screen Shot 2021-03-18 at 14 59 48" src="https://user-images.githubusercontent.com/80795739/111721118-5349eb00-8870-11eb-80b2-c973ba708786.png">
-<img width="958" alt="Screen Shot 2021-03-18 at 14 58 02" src="https://user-images.githubusercontent.com/80795739/111721066-36adb300-8870-11eb-9433-3ae87ecf54b9.png">
+Partial update example:
+<img width="960" alt="Screen Shot 2021-03-19 at 05 56 46" src="https://user-images.githubusercontent.com/80795739/111725741-aaec5480-8878-11eb-96c2-5e505e9f80bb.png">
+
+Partially updated user which has id:2 on database:
+![Ekran görüntüsü 2021-03-19 055721](https://user-images.githubusercontent.com/80795739/111725806-ce170400-8878-11eb-9a2d-b1f651d1e14f.png)
+
+-HTTP 400 Bad Request Error:
+<img width="960" alt="Screen Shot 2021-03-19 at 05 51 35" src="https://user-images.githubusercontent.com/80795739/111725650-809a9700-8878-11eb-834a-be5d51f802c7.png">
+
+-HTTP 404 Not Found Error:
+<img width="960" alt="Screen Shot 2021-03-19 at 05 52 17" src="https://user-images.githubusercontent.com/80795739/111725679-8b552c00-8878-11eb-9d67-71d7e8a86776.png">
 
 
 ### DELETE method deletes user from cloud database and only required parameter is the id that given in request parameter. However, If there is an attempt to delete a user with non-integer request parameter -e.g. "api/user/Nadja" instead of "api/user/5"-, app will return HTTP 400 error code. Also, If there is no valid id in the request parameter, app will return HTTP 404 error code.
