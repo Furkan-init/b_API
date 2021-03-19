@@ -1,6 +1,6 @@
 ## Hw 1 implementation for CMPE 328 by Furkan Erkan
 
-This is a REST Api project that has implemented by using node.js with mongoose and express packages. In addition, Postman has used for testing purposes. I keep real id that given by MongoDB intentionally to show objects are unique. However, I didn't use them to be more practical.
+This is a REST Api project that has implemented by using node.js with mongoose and express packages. In addition, Postman has used for testing purposes. I kept real id that given by MongoDB intentionally to show objects are unique. However, I didn't use them to be more practical.
 
 Firstly, you can reach deployed version of my code from (When the first time of reaching, there can be 5-10 seconds of waiting) :
 https://salty-tor-46351.herokuapp.com/api/user
