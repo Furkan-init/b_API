@@ -55,7 +55,7 @@ Updated users on database:
 <img width="958" alt="Screen Shot 2021-03-18 at 14 58 02" src="https://user-images.githubusercontent.com/80795739/111721066-36adb300-8870-11eb-9433-3ae87ecf54b9.png">
 
 
-### DELETE method deletes user from cloud database and only required parameter is the id that given in request parameter. However, If there is an attempt to add a user with non-integer request parameter -e.g. "api/user/Nadja" instead of "api/user/5"-, app will return HTTP 400 error code. Also, If there is no valid id in the request parameter, app will return HTTP 404 error code.
+### DELETE method deletes user from cloud database and only required parameter is the id that given in request parameter. However, If there is an attempt to delete a user with non-integer request parameter -e.g. "api/user/Nadja" instead of "api/user/5"-, app will return HTTP 400 error code. Also, If there is no valid id in the request parameter, app will return HTTP 404 error code.
 
 Current users on database:
 ![Ekran görüntüsü 2021-03-19 012622 updated](https://user-images.githubusercontent.com/80795739/111720541-23e6ae80-886f-11eb-8aba-688bb83344c7.png)
