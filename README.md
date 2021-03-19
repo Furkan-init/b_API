@@ -1,4 +1,4 @@
-##Hw 1 implementation for CMPE 328 by Furkan Erkan
+## Hw 1 implementation for CMPE 328 by Furkan Erkan
 
 This is a REST Api project that has implemented by using node.js with mongoose and express packages. And Postman has used for testing purposes. I keep real id that given by MongoDB intentionally to show objects are unique. However, I didn't use them to be more practical.
 
